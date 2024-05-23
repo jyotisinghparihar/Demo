@@ -25,7 +25,7 @@ const FormContainer = styled.div`
   width: 50%;
   padding: 50px;
   box-sizing: border-box;
-  background-color: #f9f9f9;
+  background-color: White;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +35,35 @@ const FormContainer = styled.div`
   border-bottom-right-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
+
+
+const LogoImage = styled.img`
+width: 40px; 
+`;
+
+
+const LogoContainer = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+`;
+
+
+const LogoText = styled.span`
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+  background: linear-gradient(to right, #012353, #27AE60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+
+
+
+
 
 const Form = styled.form`
   width: 80%;
@@ -128,22 +157,34 @@ const Login = () => {
       <SliderContainer>
         <Slider {...sliderSettings}>
           <div>
-            <StyledImg src="360.png" alt="Slide 1" />
+            <StyledImg src="teacher360.jpg" alt="Slide 1" />
+            <p style={{ color: '#fff',fontSize:'20px' }}>Track your comprehensive performance across Text and Exam.</p>
           </div>
           <div>
-            <StyledImg src="retail.jpg" alt="Slide 2" />
+            <StyledImg src="b2b360.jpg" alt="Slide 2" />
+            <p  style={{ color: '#fff',fontSize:'20px' }}>Get all the information about your kid by switching to parent profile.</p>
+
           </div>
           <div>
-            <StyledImg src="scm.jpg" alt="Slide 3" />
+            <StyledImg src="Attendanceb2b - Copy.jpg" alt="Slide 3" />
+            <p  style={{ color: '#fff',fontSize:'20px' }}>Never miss a class! Stay informed of your upcoming classes and your attendance.</p>
+
           </div>
         </Slider>
       </SliderContainer>
       <FormContainer>
         <div>
-          <h2>Welcome!</h2>
+     
+        <LogoContainer>
+  <LogoImage src="02 1.jpg" alt="Logo" />
+  <LogoText>EDU 360</LogoText>
+</LogoContainer>
+
+        <h2 style={{ color: '#333', fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Welcome!</h2>
+
         </div>
         <header>
-          <h2>Login To Your Account</h2>
+          <h2 style={{ color: '#333', fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Login To Your Account</h2>
           <Form onSubmit={handleSubmit}>
           <label>Email:</label>
             <Input
