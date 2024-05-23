@@ -1,0 +1,62 @@
+.containerStyle 
+ {
+  align-items: center;
+  background-color: white;
+  
+}
+.box2 { display: flex;
+         
+         display: 'grid';
+          grid-template-columns: 1fr 1fr;
+           justify-content: center;
+           column-gap: 12px;
+           flex-wrap: wrap;
+           }
+      
+    .Data-Exploration {
+      color: black;
+       height: 31vh ;
+       width: 45vmin;
+        padding: 40px;
+         border: 10px solid #02133805;
+         background-color: lightblue;
+          transition: 'background-color 0.3s ease'
+         }
+  
+  .Data-Exploration:hover{
+    background-color :#efdddd24;
+}
+.Expertise
+{  margin: 0px; 
+  text-rendering: inherit;
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+  .Expertise:hover{
+    background-color :#43e794;
+    background-position: 0 100%;
+   
+
+  }
+  .heading{ 
+    display: grid;
+     grid-template-columns: 1fr 1fr; 
+     justify-content: center;
+      column-gap: 12px;
+    height: 100px;
+    font-size: 15px;
+     color: #000000;
+     border: 3px solid #f5f4f375;
+     font-size: larger
+     
+     }
+.heading:hover{
+  color :white;
+}
+.our
+     {
+      font-size: 20px;}
+
+      .our:hover{
+        color:white;
+      }
